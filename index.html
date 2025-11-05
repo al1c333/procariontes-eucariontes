@@ -3,35 +3,113 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Teste</title>
-
+  
+  <title>Procariontes e Eucariontes</title>
+  
   <link rel="stylesheet" href="meu projeto/css/style.css">
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-</head> 
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+  
 <body>
-  <header class="sheader" style="background-color: #5f0967;">
-    <h2 class="text-white text-center py-3">Teste</h2>
+  
+<header class="sheader text-center text-white py-3" style="background-color: #5f0967;">
+    <h2>Procariontes e Eucariontes</h2>
   </header>
 
-  <main class="container my-4">
-    <div class="row align-items-center">
-      <div class="col-md-6 text-center">
-        <p>
-          As células animal e vegetal são eucariontes, mas diferem principalmente pela presença de parede celular, plastos (cloroplastos) e vacúolo central na célula vegetal, ausentes nas animais. Enquanto a célula animal possui centrossomas e lisossomos, que podem estar ausentes ou menos comuns nas células vegetais, a célula vegetal apresenta uma estrutura mais rígida e um formato geralmente retangular.
-        </p>
-        <img src="meu projeto/imagem/celula-animal-e-vegetal-og.webp" alt="Comparação entre célula animal e vegetal" class="img-fluid mt-3" width="300">
-      </div>
-
-      <div class="col-md-6 text-center">
-        <video src="meu projeto/video/videoplayback.mp4" width="300" controls></video>
+  <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #4b0751;">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Células</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#procarionte">Procariontes</a></li>
+          <li class="nav-item"><a class="nav-link" href="#animal">Animal</a></li>
+          <li class="nav-item"><a class="nav-link" href="#vegetal">Vegetal</a></li>
+          <li class="nav-item"><a class="nav-link" href="#endossimbiose">Endossimbiose</a></li>
+        </ul>
       </div>
     </div>
+  </nav>
+  
+  <main class="container my-5">
+
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+
+      <div class="col" id="procarionte">
+        <div class="card h-100 shadow-sm">
+          <img src="meu projeto/imagem/celula-procarionte.webp" class="card-img-top" alt="Célula Procarionte">
+          <div class="card-body">
+            <h5 class="card-title text-center">Células Procariontes</h5>
+            <p class="card-text">
+              As células procariontes são simples e não possuem núcleo verdadeiro. O material genético (DNA) fica disperso no citoplasma, numa região chamada nucleoide. 
+              Elas também não têm organelas membranosas, como mitocôndrias ou retículo endoplasmático. 
+              Bactérias e arqueas são exemplos de organismos procariontes. 
+              Apesar de simples, essas células são muito eficientes e foram as primeiras formas de vida na Terra.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col" id="animal">
+        <div class="card h-100 shadow-sm">
+          <img src="meu projeto/imagem/celula-animal.webp" class="card-img-top" alt="Célula Animal">
+          <div class="card-body">
+            <h5 class="card-title text-center">Células Animais</h5>
+            <p class="card-text">
+              As células animais são do tipo eucarionte, ou seja, possuem núcleo definido e várias organelas envoltas por membranas, como mitocôndrias, lisossomos e retículo endoplasmático.
+              Elas não têm parede celular nem cloroplastos, o que as diferencia das células vegetais. 
+              Sua principal função é formar os tecidos e órgãos dos animais, realizando processos como respiração celular e produção de energia.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col" id="vegetal">
+        <div class="card h-100 shadow-sm">
+          <img src="meu projeto/imagem/celula-vegetal.webp" class="card-img-top" alt="Célula Vegetal">
+          <div class="card-body">
+            <h5 class="card-title text-center">Células Vegetais</h5>
+            <p class="card-text">
+              As células vegetais também são eucariontes, mas possuem algumas estruturas exclusivas. 
+              A <strong>parede celular</strong> dá rigidez e forma, e os <strong>cloroplastos</strong> permitem a <strong>fotossíntese</strong>, transformando energia solar em energia química. 
+              Elas também contêm um <strong>vacúolo central</strong> grande, que armazena água e substâncias importantes. 
+              Essas características permitem que as plantas cresçam, se mantenham firmes e produzam seu próprio alimento.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col" id="endossimbiose">
+        <div class="card h-100 shadow-sm">
+          <img src="meu projeto/imagem/endossimbiose.webp" class="card-img-top" alt="Teoria da Endossimbiose">
+          <div class="card-body">
+            <h5 class="card-title text-center">Relação com a Endossimbiose</h5>
+            <p class="card-text">
+              A teoria da endossimbiose explica como as células eucariontes (animais e vegetais) surgiram a partir de procariontes. 
+              Segundo essa teoria, há bilhões de anos, uma célula procarionte englobou outra, que passou a viver dentro dela, em uma relação de cooperação. 
+              Com o tempo, essas células internas se tornaram organelas, como as <strong>mitocôndrias</strong> e os <strong>cloroplastos</strong>. 
+              Por isso, essas organelas têm DNA próprio e se reproduzem de forma semelhante às bactérias.
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <section class="text-center my-5">
+      <h4>Vídeo explicativo</h4>
+      <video src="meu projeto/video/videoplayback.mp4" width="320" controls class="mt-3 rounded shadow-sm"></video>
+    </section>
+
   </main>
 
+  <footer class="text-center text-white py-3" style="background-color: #5f0967;">
+    <p>Alice, Nathanael, Ranny, Laura © 2025</p>
+  </footer>
+
   <script src="meu projeto/js/script.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoY9D6eGkKnE2wK5CkE2s3UZc1kFZ2n6kC4/5F1V1L6wzq+" crossorigin="anonymous">
-  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>
-
-oque poderia ser adicionado para que ficasse mais completo?
