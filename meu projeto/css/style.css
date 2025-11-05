@@ -1,79 +1,70 @@
-body {
-  font-family: "Segoe UI", Arial, sans-serif;
-  background-color: #f8f9fa;
-  color: #333;
-  scroll-behavior: smooth;
-}
+    body {
+      font-family: "Segoe UI", Arial, sans-serif;
+      background-color: #f8f9fa;
+      color: #333;
+      scroll-behavior: smooth;
+    }
 
-header, footer {
-  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
-}
+    header, footer {
+      box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    }
 
-header h2 {
-  font-weight: 600;
-}
+    header h2 {
+      font-weight: 600;
+    }
 
-header p {
-  font-size: 1.1rem;
-  opacity: 0.9;
-}
+    .card {
+      border: none;
+      border-radius: 12px;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
 
-.card {
-  border: none;
-  border-radius: 12px;
-  transition: transform 0.3s, box-shadow 0.3s;
-}
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+    }
 
-.card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
-}
+    .card-title {
+      color: #5f0967;
+      font-weight: 600;
+    }
 
-.card-title {
-  color: #5f0967;
-  font-weight: 600;
-}
+    .btn-outline-primary {
+      border-color: #5f0967;
+      color: #5f0967;
+      transition: 0.3s;
+    }
 
-.btn-outline-primary {
-  border-color: #5f0967;
-  color: #5f0967;
-  transition: 0.3s;
-}
+    .btn-outline-primary:hover {
+      background-color: #5f0967;
+      color: #fff;
+    }
 
-.btn-outline-primary:hover {
-  background-color: #5f0967;
-  color: #fff;
-}
+    video {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    }
 
-video {
-  max-width: 100%;
-  height: auto;
-  border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-}
+    footer p {
+      margin: 0;
+      font-size: 0.9rem;
+    }
 
-footer p {
-  margin: 0;
-  font-size: 0.9rem;
-}
+    #topoBtn {
+      bottom: 20px;
+      right: 20px;
+      z-index: 1000;
+      display: none;
+    }
 
-#topoBtn {
-  bottom: 20px;
-  right: 20px;
-  z-index: 1000;
-  display: none;
-}
+    @media (max-width: 768px) {
+      header h2 {
+        font-size: 1.4rem;
+      }
 
-@media (max-width: 768px) {
-  header h2 {
-    font-size: 1.4rem;
-  }
-
-  header p {
-    font-size: 0.95rem;
-  }
-
-  .card-body p {
-    font-size: 0.95rem;
-  }
-}
+      .card-body p {
+        font-size: 0.95rem;
+      }
+    }
