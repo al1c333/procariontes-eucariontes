@@ -5,8 +5,31 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Teste</title>
 
-  <link rel="stylesheet" href="meu projeto/css/style.css">
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="meu_projeto/css/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+  <style>
+    /* Ajustes mínimos para dispositivos móveis */
+    img, video {
+      max-width: 100%;
+      height: auto;
+    }
+
+    @media (max-width: 768px) {
+      .col-md-6 {
+        margin-bottom: 1rem;
+      }
+
+      header h2 {
+        font-size: 1.5rem;
+      }
+
+      p {
+        font-size: 1rem;
+        text-align: justify;
+      }
+    }
+  </style>
 </head> 
 <body>
   <header class="sheader" style="background-color: #5f0967;">
@@ -19,18 +42,16 @@
         <p>
           As células animal e vegetal são eucariontes, mas diferem principalmente pela presença de parede celular, plastos (cloroplastos) e vacúolo central na célula vegetal, ausentes nas animais. Enquanto a célula animal possui centrossomas e lisossomos, que podem estar ausentes ou menos comuns nas células vegetais, a célula vegetal apresenta uma estrutura mais rígida e um formato geralmente retangular.
         </p>
-        <img src="meu projeto/imagem/celula-animal-e-vegetal-og.webp" alt="Comparação entre célula animal e vegetal" class="img-fluid mt-3" width="300">
+        <img src="meu_projeto/imagem/celula-animal-e-vegetal-og.webp" alt="Comparação entre célula animal e vegetal" class="img-fluid mt-3" width="300">
       </div>
 
       <div class="col-md-6 text-center">
-        <video src="meu projeto/video/videoplayback.mp4" width="300" controls></video>
+        <video src="meu_projeto/video/videoplayback.mp4" width="300" controls></video>
       </div>
     </div>
   </main>
 
-  <script src="meu projeto/js/script.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoY9D6eGkKnE2wK5CkE2s3UZc1kFZ2n6kC4/5F1V1L6wzq+" crossorigin="anonymous">
-  </script>
+  <script src="meu_projeto/js/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoY9D6eGkKnE2wK5CkE2s3UZc1kFZ2n6kC4/5F1V1L6wzq+" crossorigin="anonymous"></script>
 </body>
 </html>
-
